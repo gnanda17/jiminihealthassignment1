@@ -1,8 +1,11 @@
 config.yml: config.example.yml
 	cp config.example.yml config.yml
 
+.env: .env.example
+	cp .env.example .env
+
 .PHONY: init
-init: config.yml
+init: config.yml .env
 	python3 -m venv .venv
 	./.venv/bin/pip install --upgrade pip
 	./.venv/bin/pip install -r requirements-dev.txt

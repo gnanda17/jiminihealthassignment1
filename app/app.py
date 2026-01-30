@@ -4,6 +4,6 @@ from fastapi import FastAPI
 
 from app.routers import health
 
-app = FastAPI()
+app = FastAPI(title="Patient Encounter API")
 
 app.include_router(health.router)
