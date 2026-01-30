@@ -1,0 +1,9 @@
+# HIPAA-Compliant Patient Encounter API Configuration
+# Copy to config.yml and customize for your environment
+
+# Allowed encounter types - add new types here without code changes
+encounter_types:
+  - initial_assessment
+  - follow_up
+  - treatment_session
+

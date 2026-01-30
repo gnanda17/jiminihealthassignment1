@@ -1,4 +1,5 @@
 """Entry point to run server"""
+
 import uvicorn
 
 if __name__ == "__main__":
