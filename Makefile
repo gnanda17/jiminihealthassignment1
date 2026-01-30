@@ -21,3 +21,7 @@ static:
 .PHONY: run
 run:
 	./.venv/bin/python server.py
+
+.PHONY: test
+test:
+	./.venv/bin/pytest tests/ -v
