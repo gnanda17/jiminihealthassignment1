@@ -50,7 +50,8 @@ This is a demo implementation. For production:
 - **HTTPS**: Terminate TLS at load balancer or reverse proxy
 - **Rate Limiting**: Add rate limiting middleware to prevent abuse
 - **Logging**: Configure structured logging with log aggregation (CloudWatch, Datadog)
-- **PHI Sanitization**: Add a logging filter to redact PHI from all log output and database exceptions
+- **PHI Sanitization**: If we add more than request logging or Postgres make sure that our
+redaction strategy supports those cases
 - **Encryption**: Encrypt PHI at rest and in transit
 - **API Versioning**: Version the API (e.g., `/v1/encounters`) for backwards compatibility
 - **Exception Handling**: Add global exception handler to catch unexpected errors and return generic messages (avoid PHI in stack traces)
