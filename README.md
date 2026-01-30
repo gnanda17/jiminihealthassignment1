@@ -56,3 +56,4 @@ redaction strategy supports those cases
 - **API Versioning**: Version the API (e.g., `/v1/encounters`) for backwards compatibility
 - **Exception Handling**: Add global exception handler to catch unexpected errors and return generic messages (avoid PHI in stack traces)
 - **Staging Environment**: Verify all changes in staging with production-like data before deploying
+- **Pagination**: Add pagination to list endpoints (encounters, audit logs) to handle large datasets efficiently
