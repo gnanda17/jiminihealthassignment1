@@ -54,3 +54,4 @@ This is a demo implementation. For production:
 - **Encryption**: Encrypt PHI at rest and in transit
 - **API Versioning**: Version the API (e.g., `/v1/encounters`) for backwards compatibility
 - **Exception Handling**: Add global exception handler to catch unexpected errors and return generic messages (avoid PHI in stack traces)
+- **Staging Environment**: Verify all changes in staging with production-like data before deploying
